@@ -10,7 +10,7 @@ Thanks for playing the demo! If you find any bugs or problems, feel free to repo
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/abandonedRec.gif" width="500">
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Abandoned2.jpg" width="500">
 
-## Check out my new game on Itch.io: The Grave Cleaners
+## Check out my new game on Itch.io: <a href="https://gabut-games.itch.io/the-grave-cleaners"> The Grave Cleaners </a>
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Tgc.png" width="500">
 <a href="https://gabut-games.itch.io/the-grave-cleaners">
   <img src="https://static.itch.io/images/badge.svg" alt="Itch.io" width="250"/>
