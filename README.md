@@ -1,10 +1,6 @@
 # 💫 About Me:
 ## Hello, I'm Edo from Indonesia! 👋  
 Just wanna be: [ 🎮 Game Developer ] (Still learning)!
-#
-[![YouTube](https://img.shields.io/badge/YouTube-@Legatox-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@Legatox) Not active now, but maybe in the future.
-# 
-
 ## [![Unity](https://img.shields.io/badge/Unity-%23000000.svg?logo=unity&logoColor=white)](https://unity.com/) I use the unity engine to learn game development!
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/AbandonedProject1.png" width="500">
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/AbandonedProject2.png" width="500">
