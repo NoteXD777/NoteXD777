@@ -16,7 +16,6 @@ Thanks for playing the demo! If you find any bugs or problems, feel free to repo
 
 ## Check out my new game on Itch.io: The Grave Cleaners
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Tgc.png" width="500">
-<br>
 <a href="https://gabut-games.itch.io/the-grave-cleaners">
   <img src="https://static.itch.io/images/badge.svg" alt="Itch.io" width="250"/>
 </a><img src="https://img.shields.io/badge/Platform-Windows-blue?logo=windows" alt="Windows"/>
