@@ -6,7 +6,7 @@ Just wanna be: [🎮 Game Developer & 🎨 3D Artist](#) *(Still learning!)*
 
 ## 🧱 3D Modeling (Blender)
 [![Blender](https://img.shields.io/badge/Blender-F5792A?logo=blender&logoColor=white)](https://www.blender.org/)
-I use **Blender** to learn 3D modeling and modify models!
+I use Blender to learn 3D modeling — creating and modifying models!
 
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Rumah1.png" width="500">
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Dapur1.png" width="500">
