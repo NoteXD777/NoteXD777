@@ -3,7 +3,6 @@
 ## Hello, I'm Edo(maybe) From Indonesia👋
 Just wanna be: [🎮 Game Developer & 🎨 3D Artist](#) *(Still learning!)*
 ## Social Media & Game Platforms
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@GabutGames_1)
 [![Itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?logo=itch.io&logoColor=white)](https://gabut-games.itch.io/)
 
 ---
