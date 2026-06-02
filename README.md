@@ -1,7 +1,11 @@
 <img src="https://raw.githubusercontent.com/NoteXD777/NoteXD777/main/Screenshot/Huh.png" width="1000" height="80">
 
-## Seperti Pepatah
-> "Sepandai-pandai tupai melompat, tidak jauh dari pohonnya."
+![Gokil](https://komarev.com/ghpvc/?username=Maybegitu&label=Bruh🤨)
+
+## Wisdom
+> "I love game development."
+>
+> — Said no sane developer ever.
 
 # Hello, I'm Edo (maybe) from Indonesia 👋
 
