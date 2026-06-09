@@ -2,7 +2,7 @@
 
 ![Gokil](https://komarev.com/ghpvc/?username=Maybegitu&label=Bruh🤨)
 
-## Wisdom
+## Gugu Gaga
 > "I love game development."
 >
 > — Said no sane developer ever.
