@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Number Generator</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        radial-gradient(circle at top,#2b2b60,#0f172a 60%);
+
+    font-family:Segoe UI,sans-serif;
+}
+
+canvas{
+    width:min(90vw,700px);
+    height:auto;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.01)
+        );
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 0 30px rgba(0,255,255,.15),
+        0 0 80px rgba(0,255,255,.08);
+
+    backdrop-filter:blur(10px);
+}
+
+button{
+    margin-top:25px;
+
+    padding:14px 40px;
+
+    border:none;
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00c6ff,
+            #0072ff
+        );
+
+    box-shadow:
+        0 8px 25px rgba(0,114,255,.4);
+
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+h1{
+    color:white;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+</style>
+</head>
+<body>
+
+<h1>🎲 RANDOM NUMBER</h1>
+
+<canvas id="canvas"></canvas>
+
+<button id="btn">
+    Generate
+</button>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const btn = document.getElementById("btn");
+
+const WIDTH = 700;
+const HEIGHT = 400;
+
+function setupCanvas(){
+    const dpr = window.devicePixelRatio || 1;
+
+    canvas.width = WIDTH * dpr;
+    canvas.height = HEIGHT * dpr;
+
+    canvas.style.width = WIDTH + "px";
+    canvas.style.height = HEIGHT + "px";
+
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+
+setupCanvas();
+
+window.addEventListener("resize", setupCanvas);
+
+function draw(num){
+
+    ctx.clearRect(0,0,WIDTH,HEIGHT);
+
+    const glow =
+        ctx.createLinearGradient(
+            0,0,
+            WIDTH,HEIGHT
+        );
+
+    glow.addColorStop(0,"#00ffff");
+    glow.addColorStop(1,"#4f46e5");
+
+    ctx.fillStyle="rgba(255,255,255,0.05)";
+    ctx.fillRect(0,0,WIDTH,HEIGHT);
+
+    ctx.font="bold 140px Arial";
+    ctx.textAlign="center";
+    ctx.textBaseline="middle";
+
+    ctx.shadowColor="#00ffff";
+    ctx.shadowBlur=35;
+
+    ctx.fillStyle=glow;
+
+    ctx.fillText(
+        num,
+        WIDTH/2,
+        HEIGHT/2
+    );
+
+    ctx.shadowBlur=0;
+
+    ctx.fillStyle="rgba(255,255,255,0.6)";
+    ctx.font="20px Arial";
+
+    ctx.fillText(
+        "Lucky Number",
+        WIDTH/2,
+        HEIGHT/2 + 95
+    );
+}
+
+draw("????");
+
+btn.addEventListener("click",()=>{
+
+    btn.disabled=true;
+
+    const duration = 1200;
+    const start = performance.now();
+
+    function animate(now){
+
+        const elapsed = now - start;
+
+        const rolling =
+            Math.floor(Math.random()*10000)
+            .toString()
+            .padStart(4,"0");
+
+        draw(rolling);
+
+        if(elapsed < duration){
+            requestAnimationFrame(animate);
+        }
+        else{
+
+            const finalNumber =
+                Math.floor(Math.random()*10000)
+                .toString()
+                .padStart(4,"0");
+
+            draw(finalNumber);
+
+            btn.disabled=false;
+        }
+    }
+
+    requestAnimationFrame(animate);
+});
+</script>
+
+</body>
+</html>
